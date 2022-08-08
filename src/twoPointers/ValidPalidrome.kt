@@ -1,4 +1,0 @@
-package twoPointers
-
-class ValidPalidrome {
-}
