@@ -11,6 +11,32 @@ public class ReverseLinkedList {
             this.next = next;
         }
     }
+    class sol{
+        public ListNode reveseList(ListNode head){
+            ListNode prev = null;
+            while (head != null){
+                ListNode next_node = head.next;
+                head.next = prev;
+                prev = head;
+                head = next_node;
+            }
+            return prev;
+        }
+    }
+
+
+    class Solu{
+        public ListNode reverseList(ListNode head){
+            ListNode prev = null;
+            while(head!= null){
+                ListNode next_node = head.next;
+                head.next = prev;
+                prev = head;
+                head = next_node;
+            }
+            return head;
+        }
+    }
     class IterativeSolution{
         public ListNode reverseList(ListNode head){
             ListNode prev = null;
@@ -37,4 +63,17 @@ public class ReverseLinkedList {
             return recursive(temp,node);
         }
     }
+    class solution{
+        public  ListNode reverseList(ListNode head){
+            ListNode prev = null;
+            while(head != null){
+                ListNode  next_node = head.next;
+                head.next = prev;
+                prev =  head;
+                head = next_node;
+            }
+            return prev;
+        }
+    }
+
 }
