@@ -1,23 +1,23 @@
 package Trie;
-
+//
 public class ImplementTrie {
-    class Trie {
-
-        public Trie() {
-
-        }
-
-        public void insert(String word) {
-
-        }
-
-        public boolean search(String word) {
-
-        }
-
-        public boolean startsWith(String prefix) {
-
-        }
+//    class Trie {
+//
+//        public Trie() {
+//
+//        }
+//
+//        public void insert(String word) {
+//
+//        }
+//
+//        public boolean search(String word) {
+//
+//        }
+//
+//        public boolean startsWith(String prefix) {
+//
+//        }
     }
 
 /**
@@ -27,4 +27,4 @@ public class ImplementTrie {
  * boolean param_2 = obj.search(word);
  * boolean param_3 = obj.startsWith(prefix);
  */
-}
+//}
