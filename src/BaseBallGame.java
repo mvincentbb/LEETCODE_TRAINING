@@ -9,28 +9,28 @@ public class BaseBallGame {
         int sum = 0;
         ArrayList<Integer> record  = new ArrayList<>() ;
         int rl = 0;
-        for (int i = 0; i< ops.length; i++){
+        for (String op : ops) {
 
-            switch (ops[i]){
-                case "+" :
-                    record.add(record.get(rl-1) + record.get(rl- 2));
+            switch (op) {
+                case "+":
+                    record.add(record.get(rl - 1) + record.get(rl - 2));
                     sum += record.get(rl);
                     break;
-                case ("D") :
+                case ("D"):
                     record.add(2 * record.get(rl - 1));
-                    sum += 2 * record.get(rl-1);
+                    sum += 2 * record.get(rl - 1);
                     break;
-                case ("C") :
-                    sum -= record.get(rl-1);
+                case ("C"):
+                    sum -= record.get(rl - 1);
                     record.remove(rl - 1);
                     break;
 
-                 default :
-                    int score = Integer.valueOf(ops[i]);
+                default:
+                    int score = Integer.parseInt(op);
                     record.add(score);
                     sum += score;
-                     break;
-                }
+                    break;
+            }
             rl = record.size();
         }
 
